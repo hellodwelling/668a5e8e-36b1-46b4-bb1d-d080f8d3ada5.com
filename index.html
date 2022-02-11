@@ -489,8 +489,19 @@
                                         <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                                             <div class="relative grid gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8">
                                                 <!-- Render each sublink -->
-                                                <!-- <each loop="link in [{&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;1&#x27;, &#x27;href&#x27;: &#x27;gallery-1&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;2&#x27;, &#x27;href&#x27;: &#x27;gallery-2&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;3&#x27;, &#x27;href&#x27;: &#x27;gallery-3&#x27;}, {&#x27;title&#x27;: &#x27;All Photos&#x27;, &#x27;copy&#x27;: &#x27;All Photos&#x27;, &#x27;href&#x27;: &#x27;gallery-All&#x27;}]"> -->
+                                                <!-- <each loop="link in [{&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;3&#x27;, &#x27;href&#x27;: &#x27;gallery-3&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;1&#x27;, &#x27;href&#x27;: &#x27;gallery-1&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;2&#x27;, &#x27;href&#x27;: &#x27;gallery-2&#x27;}, {&#x27;title&#x27;: &#x27;All Photos&#x27;, &#x27;copy&#x27;: &#x27;All Photos&#x27;, &#x27;href&#x27;: &#x27;gallery-All&#x27;}]"> -->
                                                   
+                                                    <a
+                                                        href=" gallery-3 "
+                                                        role="menuitem"
+                                                        class="block p-3 -m-3 transition rounded-md  focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 hover:bg-gray-50"
+                                                    >
+                                                        <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
+                                                        <p class="mt-1 text-sm text-gray-500">3</p>
+                                                    </a>
+                                                <!-- </each> -->
+                                               <!--  -->
+                                                 
                                                     <a
                                                         href=" gallery-1 "
                                                         role="menuitem"
@@ -509,17 +520,6 @@
                                                     >
                                                         <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
                                                         <p class="mt-1 text-sm text-gray-500">2</p>
-                                                    </a>
-                                                <!-- </each> -->
-                                               <!--  -->
-                                                 
-                                                    <a
-                                                        href=" gallery-3 "
-                                                        role="menuitem"
-                                                        class="block p-3 -m-3 transition rounded-md  focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 hover:bg-gray-50"
-                                                    >
-                                                        <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
-                                                        <p class="mt-1 text-sm text-gray-500">3</p>
                                                     </a>
                                                 <!-- </each> -->
                                                <!--  -->
@@ -834,6 +834,12 @@
                                         <div class="relative grid gap-6 px-5 py-2 bg-white rounded-lg">
                                             <!-- Render each sublink -->
                                             
+                                                <a href="gallery-3" role="menuitem" class="block p-3 -m-3 transition rounded-md">
+                                                    <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
+                                                    <p class="mt-1 text-sm text-gray-500">3</p>
+                                                </a>
+                                            <!-- </each> -->
+                                            
                                                 <a href="gallery-1" role="menuitem" class="block p-3 -m-3 transition rounded-md">
                                                     <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
                                                     <p class="mt-1 text-sm text-gray-500">1</p>
@@ -843,12 +849,6 @@
                                                 <a href="gallery-2" role="menuitem" class="block p-3 -m-3 transition rounded-md">
                                                     <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
                                                     <p class="mt-1 text-sm text-gray-500">2</p>
-                                                </a>
-                                            <!-- </each> -->
-                                            
-                                                <a href="gallery-3" role="menuitem" class="block p-3 -m-3 transition rounded-md">
-                                                    <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
-                                                    <p class="mt-1 text-sm text-gray-500">3</p>
                                                 </a>
                                             <!-- </each> -->
                                             
@@ -2233,7 +2233,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
         
         <div class="flex justify-center -m-1">
             <a
-                href="gallery-1"
+                href="gallery-3"
                 class="inline-block p-1 mt-12 text-xl font-semibold text-center transition  focus:ring-2 focus:outline-none ring-primary ring-offset-2 text-primary hover:text-primary-darker"
                 >See more photos</a
             >
@@ -2476,7 +2476,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                 type="button"
                                 @click="expanded = !expanded"
                                 class="flex items-start justify-between w-full text-left text-gray-400 rounded  focus:outline-none focus-visible:ring-2 ring-primary"
-                                aria-controls="29207"
+                                aria-controls="29210"
                                 :aria-expanded="expanded"
                             >
                                 <span class="font-medium text-gray-900">What&#x27;s the best way to reach you?</span>
@@ -2496,7 +2496,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                 </span>
                             </button>
                         </dt>
-                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="29207">
+                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="29210">
                             <div aria-hidden="true" class="invisible h-2"></div>
                             <p class="mt-2 text-base text-gray-500">Give us a </p>
                         </dd>
@@ -2517,7 +2517,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                 type="button"
                                 @click="expanded = !expanded"
                                 class="flex items-start justify-between w-full text-left text-gray-400 rounded  focus:outline-none focus-visible:ring-2 ring-primary"
-                                aria-controls="29208"
+                                aria-controls="29211"
                                 :aria-expanded="expanded"
                             >
                                 <span class="font-medium text-gray-900">Do you provide free estimates?</span>
@@ -2537,7 +2537,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                 </span>
                             </button>
                         </dt>
-                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="29208">
+                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="29211">
                             <div aria-hidden="true" class="invisible h-2"></div>
                             <p class="mt-2 text-base text-gray-500">Yes, we&#x27;ll always estimate the job for free. Just give us a call to get started.</p>
                         </dd>
@@ -2558,7 +2558,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                 type="button"
                                 @click="expanded = !expanded"
                                 class="flex items-start justify-between w-full text-left text-gray-400 rounded  focus:outline-none focus-visible:ring-2 ring-primary"
-                                aria-controls="29209"
+                                aria-controls="29212"
                                 :aria-expanded="expanded"
                             >
                                 <span class="font-medium text-gray-900">How are you different?</span>
@@ -2578,7 +2578,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                 </span>
                             </button>
                         </dt>
-                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="29209">
+                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="29212">
                             <div aria-hidden="true" class="invisible h-2"></div>
                             <p class="mt-2 text-base text-gray-500">We&#x27;re a customer-first company that will do whatever it takes to make sure the job is well done.</p>
                         </dd>
@@ -3218,102 +3218,102 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-116196"
-                                            name="116196"
+                                            id="contact-service-116206"
+                                            name="116206"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-116196" class="ml-3 text-sm font-medium text-gray-700">Website Generation</label>
+                                        <label for="contact-label-service-116206" class="ml-3 text-sm font-medium text-gray-700">Website Generation</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-116197"
-                                            name="116197"
+                                            id="contact-service-116207"
+                                            name="116207"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-116197" class="ml-3 text-sm font-medium text-gray-700">Body Repairs</label>
+                                        <label for="contact-label-service-116207" class="ml-3 text-sm font-medium text-gray-700">Body Repairs</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-116198"
-                                            name="116198"
+                                            id="contact-service-116208"
+                                            name="116208"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-116198" class="ml-3 text-sm font-medium text-gray-700">Rim Repairs</label>
+                                        <label for="contact-label-service-116208" class="ml-3 text-sm font-medium text-gray-700">Rim Repairs</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-116199"
-                                            name="116199"
+                                            id="contact-service-116209"
+                                            name="116209"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-116199" class="ml-3 text-sm font-medium text-gray-700">Paint Correction</label>
+                                        <label for="contact-label-service-116209" class="ml-3 text-sm font-medium text-gray-700">Paint Correction</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-116200"
-                                            name="116200"
+                                            id="contact-service-116210"
+                                            name="116210"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-116200" class="ml-3 text-sm font-medium text-gray-700">Paint Restoration</label>
+                                        <label for="contact-label-service-116210" class="ml-3 text-sm font-medium text-gray-700">Paint Restoration</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-116201"
-                                            name="116201"
+                                            id="contact-service-116211"
+                                            name="116211"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-116201" class="ml-3 text-sm font-medium text-gray-700">Full Detail Service</label>
+                                        <label for="contact-label-service-116211" class="ml-3 text-sm font-medium text-gray-700">Full Detail Service</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-116202"
-                                            name="116202"
+                                            id="contact-service-116212"
+                                            name="116212"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-116202" class="ml-3 text-sm font-medium text-gray-700">Maintenance Wash</label>
+                                        <label for="contact-label-service-116212" class="ml-3 text-sm font-medium text-gray-700">Maintenance Wash</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-116203"
-                                            name="116203"
+                                            id="contact-service-116213"
+                                            name="116213"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-116203" class="ml-3 text-sm font-medium text-gray-700">Ceramic Coating</label>
+                                        <label for="contact-label-service-116213" class="ml-3 text-sm font-medium text-gray-700">Ceramic Coating</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-116204"
-                                            name="116204"
+                                            id="contact-service-116214"
+                                            name="116214"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-116204" class="ml-3 text-sm font-medium text-gray-700">Waxing Services</label>
+                                        <label for="contact-label-service-116214" class="ml-3 text-sm font-medium text-gray-700">Waxing Services</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-116205"
-                                            name="116205"
+                                            id="contact-service-116215"
+                                            name="116215"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-116205" class="ml-3 text-sm font-medium text-gray-700">RV/Camper Detail</label>
+                                        <label for="contact-label-service-116215" class="ml-3 text-sm font-medium text-gray-700">RV/Camper Detail</label>
                                     </div>
                                 
                             </div>
