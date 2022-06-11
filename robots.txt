@@ -1,1 +1,3 @@
-disallow: /index
+User-agent: *
+Disallow: 
+Sitemap: https://668a5e8e-36b1-46b4-bb1d-d080f8d3ada5.com/sitemap.xml
